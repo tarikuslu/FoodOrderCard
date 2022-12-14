@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Smythe&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="./images/header-img.png">
+            <div class="header-info">
+                <h2>Jimmy's Diner</h1>
+                    <p>The best burgers and pizzas in town.</p>
+            </div>
+        </div>
+        <div class="menu-items">
+
+        </div>
+        <div class="checkout-container hidden">
+            <h2>Your Order</h2>
+            <div class="checkout-items">
+            </div>
+            <hr class="line">
+            <div class="price-container">
+                <p>Total Price: </p>
+                <p>$<span id="total"></span> </p>
+            </div>
+            <div class="complete-btn-container">
+                <button class="complete-btn checkout-btn">Complete order</button>
+            </div>
+        </div>
+        <div class="modal">
+            <h2>Enter card details</h2>
+
+            <form>
+                <input required placeholder="Enter your name" type="text">
+                <input required placeholder="Enter card number" type="number">
+                <input required placeholder="Enter CVV" type="number">
+                <input type="submit" title="Pay" class="complete-btn pay-btn">
+            </form>
+
+        </div>
+    </div>
+    <script src="index.js" type="module"></script>
+</body>
+
+</html>
